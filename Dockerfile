@@ -16,5 +16,5 @@ COPY . /code
 
 ENTRYPOINT [ "python3" ]
 
-CMD ["/code/manage.py","runserver"]
+CMD ["/code/manage.py","runserver","0.0.0.0:8000"]
 
