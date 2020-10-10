@@ -4,7 +4,9 @@ MAINTAINER chunk
 
 RUN apt-get update -y && \  
     apt-get install -y python3-pip python3-dev && \
-    mkdir /code
+    mkdir /code && \
+    rm -rf /var/lib/apt/lists/* 
+    
 
 COPY ./requirements.txt /code/requirements.txt
 
